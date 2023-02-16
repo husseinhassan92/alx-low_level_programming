@@ -7,7 +7,8 @@
  */
 int main(void)
 {
-    return (0);
+	printf("alx school");
+        return (0);
 }
 
      
