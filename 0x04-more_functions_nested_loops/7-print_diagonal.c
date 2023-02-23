@@ -5,14 +5,14 @@
  */
 void print_diagonal(int n)
 {
-	int i;
-	int j;
+	int draw;
+	int space;
 
 	if (n > 0)
 	{
-		for (i = 1; i <= n; i++)
+		for (draw = 1; draw <= n; draw++)
 		{
-			for (j = 1; space < i; j++)
+			for (space = 1; space < draw; space++)
 				_putchar(' ');
 			_putchar('\\');
 			_putchar('\n');
