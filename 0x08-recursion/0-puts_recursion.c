@@ -3,7 +3,7 @@
  * _puts_recursion - print string with new line
  * @s: string to print
  */
-void _puts_recursion(char *s);
+void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
