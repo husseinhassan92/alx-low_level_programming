@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * str_concat - concatenates two strings
+ * string_nconcat - concatenate s1 and n bytes of s2; return ptr to string
  * @s1: string 1
  * @s2: string 2
  * @n: n bytes to concat from string 2
@@ -11,7 +11,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *concat_str;
-	int n, len1 = 0, len2 = 0,
+	int len1 = 0, len2 = 0,
 	    i = 0, j = 0;
 
 	if (s1 == NULL)
