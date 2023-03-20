@@ -5,6 +5,7 @@
  * @name: first member
  * @age: second member
  * @owner: third member
+ * dog_t - Typedef for struct dog
  */
 typedef struct dog
 {
