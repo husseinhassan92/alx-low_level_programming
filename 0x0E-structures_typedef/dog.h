@@ -3,7 +3,7 @@
 /**
  * dog - Typedef for struct dog
  */
-typedef struct dog dog;
+typedef struct dog dog_t;
 /**
  * struct dog - structure for dogs
  * @name: first member
