@@ -7,24 +7,27 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int n, len = 0;
+	int len = 0, n;
 	unsigned int num = 0;
 
 	if (b == NULL)
-		return (num);
+		return (0);
 
 	while (b[len] != '\0')
 		len++;
 	len -= 1;
+
 	n = 0;
 	while (b[n])
 	{
 		if ((b[n] != '0') && (b[n] != '1'))
-			return (num);
+			return (0);
+
 		if (b[n] == '1')
 			num += (1 * (1 << len));
-		i++;
+		n++;
 		len--;
 	}
+
 	return (num);
 }
