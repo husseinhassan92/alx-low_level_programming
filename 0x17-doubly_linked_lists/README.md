@@ -1,0 +1,1 @@
+Each file in this repository holds code that illustrates an essential concept of programming, specific to the C programming language: manipulating doubly linked lists by printing/inserting/deleting nodes, freeing nodes, and using the node data (e.g. to get a total sum)
