@@ -13,7 +13,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *node;
 	char *copy;
-	unsigned long int index, i;
+	unsigned long int idx, i;
 
 	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 		return (0);
@@ -22,8 +22,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (copy == NULL)
 		return (0);
 
-	index = key_index((const unsigned char *)key, ht->size);
-	for (i = index; ht->array[i]; i++)
+	idx = key_index((const unsigned char *)key, ht->size);
+	for (i = idx; ht->array[i]; i++)
 	{
 		if (strcmp(ht->array[i]->key, key) == 0)
 		{
@@ -46,8 +46,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	node->value = copy;
-	node->next = ht->array[index];
-	ht->array[index] = node;
+	node->next = ht->array[idx];
+	ht->array[idx] = node;
 
 	return (1);
 }
