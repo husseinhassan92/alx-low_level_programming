@@ -24,7 +24,7 @@ int binary_search(int *array, size_t size, int value)
 			if (left < right)
 				printf("%d ", array[i]);
 			else
-				printf("%d\n", array[i]);
+				printf("%d", array[i]);
 		}
 		printf("\n");
 		mid = (left + right) / 2;
